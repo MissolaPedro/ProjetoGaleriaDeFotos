@@ -1,0 +1,170 @@
+:root {
+  --paddingPadrao: 12px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* NavBar */
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #fbfbfb;
+}
+
+.sct1,
+.sct2 {
+  width: 50%;
+  padding: var(--paddingPadrao);
+}
+
+.sct1 a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.img-logo {
+  border-radius: 8px;
+}
+
+.sct1 h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.sct2 {
+  text-align: right;
+}
+
+.logo,
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.sct2 a {
+  font-size: 18px;
+  padding: 4px;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 500px;
+  background-image: url(images/Banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+
+  border-bottom: 5px solid #fbfbfb;
+}
+
+.banner h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.banner p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* Galaria de fotos */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.galeria {
+  display: grid;
+  gap: 13px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.conteudo {
+  padding: 2px;
+  width: 100%;
+}
+
+section .title {
+  padding: 4px 0px 4px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+section .desc {
+  padding: 2.5px 0px 2.5px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.5px;
+}
+
+/*Footer*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #fbfbfb;
+  color: black;
+  padding: 8px;
+}
+
+footer h2 {
+  font-weight: 400 !important;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 950px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fbfbfb;
+    color: black;
+    padding: 8px;
+  }
+  
+  footer h2 {
+    font-weight: 400 !important;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
